@@ -454,6 +454,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   text-align: right;
+  padding-right: 20px;
 }
 
 .navbar__address {
@@ -634,13 +635,22 @@ img {
 }
 .prefer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .prefer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
   width: 22%;
   height: 15%;
 }
+.prefer__item-unic {
+ flex-direction: column;
+}
 .prefer__image {
+  
   width: 80%;
 }
 .portfolio {
@@ -710,6 +720,7 @@ div.slick-initialized {
   transition: .5s;
   }
 .card {
+  min-width: 370px;
   width: 32%;
   text-align: center;
   border: 1px solid #e8e8e8;
@@ -1145,7 +1156,13 @@ font-size: 16px;
 }
 @media (max-width: 1200px) {
   .container {
-    width: 90%;
+    width: 100%;
+  }
+  .navbar__link {
+    font-size: 18px;
+  }
+  .navbar__phone {
+    font-size: 16px;
   }
   .hero-block {
     -webkit-box-orient: vertical;
@@ -1157,7 +1174,18 @@ font-size: 16px;
     margin-bottom: 44px;
   }
   .hero-text {
+    width: 100%;
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .hero-list {
+    align-items: center;
   }
   .offer {
     background-size: cover;
@@ -1251,11 +1279,36 @@ font-size: 16px;
     margin-bottom: 30px;
   }
 }
-
+@media (max-width: 1000px) {
+  .offer-wrap {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    flex-direction: column-reverse;
+  }
+  .offer-block {
+    width: 100%;
+    padding: 20px;
+  }
+}
+}
 @media (max-width: 768px) {
+  .navbar__info  {
+    display: none;
+  }  
+  
   .container {
     max-width: 580px;
     width: 90%;
+  }
+  .navbar__links {
+    width: 69%;
+  }
+  .navbar__link {
+    font-size: 13px;
+  }
+  .navbar__phone {
+    font-size: 14px;
   }
   .modal-content {
    display: none;
@@ -1275,14 +1328,18 @@ font-size: 16px;
     padding: 15px 20px 14px 20px;
   }
   .navbar__logo {
-    width: 90px;
+    width: 65px;
   }
   .navbar-contacts {
     display: none;
   }
+  .hero-text {
+    padding: 5px;
+  }
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
+    text-align: center;
     margin-bottom: 15px;
   }
   .hero-text__subtitle {
@@ -1447,6 +1504,10 @@ font-size: 16px;
 }
 
 @media (max-width: 500px) {
+  
+  .navbar__link {
+    font-size: 11px;
+  }
   .steps-block {
     justify-content: center;
     flex-direction: column;
@@ -1513,6 +1574,9 @@ font-size: 16px;
   .modal-form__subtitle {
     font-size: 13px;
     text-align: center;
+  }
+  .price__card {
+    transform: scale(0.8);
   }
 }
 @media (max-width: 350px) {
