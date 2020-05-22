@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Энергия</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @font-face {
+         font-family: Oswald;
+         src: url(fonts/Oswald-Regular.ttf); 
+        }
+    </style>
 </head>
 <body>
 
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-block">
@@ -18,10 +24,10 @@
                             <img src="img/logo.png" alt="логотип">
                         </div>
                         <div class="navbar__links">
-                            <a class="navbar__link" href="#">О компании</a>
-                            <a class="navbar__link" href="#">Услуги</a>
-                            <a class="navbar__link" href="#">Партнеры</a>
-                            <a class="navbar__link" href="#">Контакты</a>
+                            <a class="navbar__link" href="#hero">О компании</a>
+                            <a class="navbar__link" href="#price">Услуги</a>
+                            <a class="navbar__link" href="#portfolio">Партнеры</a>
+                            <a class="navbar__link" href="#footer">Контакты</a>
                         </div>
                         <div class="navbar__info">
                             <div class="navbar-contacts">
@@ -29,7 +35,6 @@
                                 </span>
                                 <a href="tel:84954225131" class="navbar__phone">+7 495 506-60-53</a>
                             </div>
-                            <!-- <button class="button navbar__button" data-target="new" onclick="ym(54978337, 'reachGoal', 'button'); return true;" value="Заказать">Перезвоните мне</button>  -->
                         </div>
                     </div>
                 </div>
@@ -81,43 +86,7 @@
                 </div>
             </div>
         </section>
-        <section class="offer section">
-            <h4 class="section-title offer__title">Генеральный директор - Албаков Рашид Юнусович</h4>
-            <div class="container offer-container">
-                <div class="offer-block wow fadeInLeft" data-wow-delay="0.5s" >
-                    <span>Специалист в области строительства и антикризисного управления, экономист-международник, выпускник ВАВТ (Академия Внешней торговли при Торговой палате РФ); аспирант магистратуры МГСУ (Московский государственный строительный университет); В период с 2011-2012 работал в структурах РКК «Энергия» Федерального космического агентства - НПО «Энергомаш им.ак. Глушко». 2012-2013г.г. - Заместитель генерального директора по экономике и финансам ЗАО «СУ-336» филиала Треста «Мосэлектротягстрой»;
-                        С 2013 по 2017 г. руководитель ЗАО «Строительно-монтажный поезд №250» дочернее общество Треста «Мосэлектротягстрой» в г. Коломна Моск. обл.;
-                        В период 2017-2019г. в качестве руководителя проекта ОАО «Бамстройпуть» осуществлял контроль за исполнением гарантийных обязательств в ходе ввода в эксплуатацию комплекса зданий и сооружений 3 дома МО РФ (Москва, Фрунз. наб. д.22/2).
-                        С начала 2018 года возглавил ООО ГК «ЭНЕРГИЯ».
-                        Как руководитель ЗАО «СМП-250» принимал участие в строительстве крупных объектов ОАО «ТМЭТС», ОАО «Бамстройпуть» и др., а именно наиболее значимые из них:
-                        </span>
-                    <ul>
-                        <li>2013-2016	Строительство, капитальный ремонт и реконструкция Учебной базы «Рязанского ВВДКУ им. Маргелова В.Ф.» в г. Рязани и Рязанской обл </li>
-                        <li>2014-2017 Строительство «Перинатального центра в г. Коломна»</li>
-                        <li>2013-2014 Строительство метродепо «Братеево», метродепо «Выхино»; </li>
-                        <li>2013-2015 Строительство и реконструкция зданий и сооружений 3 дома Министерства обороны РФ, г. Москва, Фрунзенская наб. д.22/2; (Атриум, 17А, 10/3)</li>
-                        <li>2013-2016 Строительство микрорайона «Колычево» Моск. обл., г.Коломна, стр-во 4-х 15 эт. многоквартирных домов в г. Коломна, Моск. обл.; инвестиционный проект МЭТС</li>
-                    </ul>
-                </div>
-                <div class="offer-block wow fadeInRight" data-wow-delay="0.6s">
-                    <img  class="offer-block__img" src="img/portfolio-img/portfolio-1.jpg">
-                </div>
-            </div>
-        </section>
-        <section class="section prefer">
-            <div class="container prefer-container">
-                <h2 class="section-title portfolio__title">Заслуги и грамоты</h2>
-                
-                <div class="prefer-content">
-                    <div class="prefer__item"><img class="prefer__image" src="img/prefer/Приказ ГУС ВС МО РФ.jpg" alt=""></div>
-                    <div class="prefer__item"><img class="prefer__image" src="img/prefer/portfolio-3.jpg" alt="">  
-                </div>
-                    <div class="prefer__item"><img class="prefer__image" src="img/prefer/Грамота ИВ ВС МО РФ.jpg" alt=""></div>
-                    <div class="prefer__item"><img class="prefer__image" src="img/prefer/Грамота ЗМО Попов П.А..jpg" alt=""></div>
-                </div>
-            </div>
-        </section>
-        <section class="section price">
+        <section id="price" class="section price">
             <div class="container price-content">
                 <h2 class="section-title price__title">Услуги компании</h2>
                 <div class="cards">
@@ -196,7 +165,47 @@
                 </div>
             </div>
         </section>
-        <section class="section portfolio">
+        <section id="offer" class="offer section">
+            <div class="container offer-container">
+                <h4 class="section-title offer__title">Генеральный директор - Албаков Рашид Юнусович</h4>
+                <div class="offer-wrap">
+                    <div class="offer-block wow fadeInLeft" data-wow-delay="0.5s" >
+                        <span>Специалист в области строительства и антикризисного управления, экономист-международник, выпускник ВАВТ (Академия Внешней торговли при Торговой палате РФ); аспирант магистратуры МГСУ (Московский государственный строительный университет); В период с 2011-2012 работал в структурах РКК «Энергия» Федерального космического агентства - НПО «Энергомаш им.ак. Глушко». 2012-2013г.г. - Заместитель генерального директора по экономике и финансам ЗАО «СУ-336» филиала Треста «Мосэлектротягстрой»;
+                            С 2013 по 2017 г. руководитель ЗАО «Строительно-монтажный поезд №250» дочернее общество Треста «Мосэлектротягстрой» в г. Коломна Моск. обл.;
+                            В период 2017-2019г. в качестве руководителя проекта ОАО «Бамстройпуть» осуществлял контроль за исполнением гарантийных обязательств в ходе ввода в эксплуатацию комплекса зданий и сооружений 3 дома МО РФ (Москва, Фрунз. наб. д.22/2).
+                            С начала 2018 года возглавил ООО ГК «ЭНЕРГИЯ».
+                            Как руководитель ЗАО «СМП-250» принимал участие в строительстве крупных объектов ОАО «ТМЭТС», ОАО «Бамстройпуть» и др., а именно наиболее значимые из них:
+                            </span>
+                        <ul>
+                            <li>2013-2016	Строительство, капитальный ремонт и реконструкция Учебной базы «Рязанского ВВДКУ им. Маргелова В.Ф.» в г. Рязани и Рязанской обл </li>
+                            <li>2014-2017 Строительство «Перинатального центра в г. Коломна»</li>
+                            <li>2013-2014 Строительство метродепо «Братеево», метродепо «Выхино»; </li>
+                            <li>2013-2015 Строительство и реконструкция зданий и сооружений 3 дома Министерства обороны РФ, г. Москва, Фрунзенская наб. д.22/2; (Атриум, 17А, 10/3)</li>
+                            <li>2013-2016 Строительство микрорайона «Колычево» Моск. обл., г.Коломна, стр-во 4-х 15 эт. многоквартирных домов в г. Коломна, Моск. обл.; инвестиционный проект МЭТС</li>
+                        </ul>
+                    </div>
+                    <div class="offer-block wow fadeInRight" data-wow-delay="0.6s">
+                        <img  class="offer-block__img" src="img/portfolio-img/portfolio-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section prefer">
+            <div class="container prefer-container">
+                <h2 class="section-title portfolio__title">Заслуги и грамоты</h2>
+                
+                <div class="prefer-content">
+                    <div class="prefer__item"><img class="prefer__image" src="img/prefer/Приказ ГУС ВС МО РФ.jpg" alt=""></div>
+                    <div class="prefer__item">
+                        <img class="prefer__image" src="img/prefer/portfolio-3.jpg" alt="">
+                        <img class="prefer__image" src="img/prefer/portfolio-2.jpg" alt="">
+                    </div>
+                    <div class="prefer__item"><img class="prefer__image" src="img/prefer/Грамота ИВ ВС МО РФ.jpg" alt=""></div>
+                    <div class="prefer__item"><img class="prefer__image" src="img/prefer/Грамота ЗМО Попов П.А..jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="section portfolio">
             <div class="container slider-container">
                 <h2 class="section-title portfolio__title">Партнеры</h2>
                 <div class="slider">
@@ -214,14 +223,14 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="map" id="map">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3196c9e345a9903c0131ba3c45c875f9d6dc638a4f50c4cae6e3213a7aa7c65&amp;width=100%&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
         <div class="container contacts-container">
             <div class="contacts-block">
                 <div class="contacts">
-                    <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас<br> по всем вопросам ремонта</h3>
+                    <h3 class="contacts__title">Контакты</h3>
                     <div class="contacts-list">
                         <ul>
                             <li class="contacts-list__item">

@@ -394,6 +394,7 @@ img {
 }
 .section {
   padding: 90px 0;
+  font-family: Oswald;
 }
 
 .section-title {
@@ -494,7 +495,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(0, 0, 0, .8);
+  background:rgba(0, 0, 0, .8);
   padding-top: 30px;
 }
 .hero-text {
@@ -553,24 +554,26 @@ img {
 .hero-list__text {
   height: 37px;
 }
-.offer-container {
+.offer-wrap {
   display: flex;
-  justify-content:space-between
+  justify-content:space-between;
+  padding-left: 20px;
 }
 .offer-container {
-  display: flex;
-  justify-content:space-between
-}
-.offer {
-  /* background: url("../img/hero/offen-bg.png") no-repeat; */
-  background-position: center right;
-  background-size: contain;
-  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, .8);
+}
+.offer {
+  background: url("../img/offer/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
 }
 .offer-block {
   width: 50%;
@@ -631,6 +634,13 @@ img {
 .prefer-content {
   display: flex;
   justify-content: space-between;
+}
+.prefer__item {
+  width: 22%;
+  height: 15%;
+}
+.prefer__image {
+  width: 80%;
 }
 .portfolio {
   background: #f5f5f5 url(../img/portfolio-img/portfolio_pattern.png) repeat-y center left;
