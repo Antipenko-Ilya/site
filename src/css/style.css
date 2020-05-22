@@ -420,7 +420,7 @@ img {
   background: rgba(0, 0, 0, .8);
 }
 .navbar__logo {
-  width: 190px;
+  width: 170px;
 }
 .navbar__logo img {
 }
@@ -467,18 +467,9 @@ img {
           flex-direction: column;
 }
 
-.navbar__button {
-  margin-left: 30px;
-  font-size: 13px;
-  font-family: 'Museo Sans Bold', sans-serif; 
-  font-weight: 700;
-  cursor: pointer;
-  outline: none;
-}
-
 .navbar__phone {
   display: inline-block;
-  color: #333333;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -503,13 +494,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, .8);
   padding-top: 30px;
 }
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .hero-text__title {
@@ -524,18 +516,24 @@ img {
 
 .hero-text__subtitle {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 .hero-image {
   width: 50%;
 }
 .hero-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
   font-size: 14px;
 }
 
@@ -546,7 +544,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .hero-list__item:last-child {
   margin-bottom: 0;
@@ -554,6 +552,17 @@ img {
 
 .hero-list__text {
   height: 37px;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/offer/bg.png);
+  color: #ffffff;
+}
+.offer__title {
+  text-align: center;
 }
 .offer-container {
   display: flex;
@@ -618,8 +627,20 @@ img {
   font-weight: 400;
   line-height: 24px;
 }
-.communication srong {
+.communication strong {
   font-weight: 700;
+}
+.prefer {
+  background: #252527;
+  color: #ffffff;
+}
+.prefer-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.prefer__item {
+  width: 23%;
 }
 .portfolio {
   background: #f5f5f5 url(../img/portfolio-img/portfolio_pattern.png) repeat-y center left;
@@ -636,13 +657,19 @@ img {
 .slider.slick-slide {
   margin: 0 10px;
 }
- 
+.slider__image {
+  width: 200px;
+}
 .slider.slick-list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 -10px;
-}  
+} 
+div.slick-initialized {
+  display: flex;
+  justify-content: center;
+} 
 .slider__item {
   margin-left: 0 auto;
   outline: none;
@@ -662,11 +689,21 @@ img {
   margin: 0 auto;
   max-width: 522px;
   height: 74px;
-  color: #000000;
+  color: #ffffff;
   font-family: "Museo Sans Bold";
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 400;
   
+}
+.price{
+  background: url(../img/hero/bgc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.price-content {
+  
+  background: rgba(0,0,0,0.8);
 }
 .price__subtitl{
   margin-bottom: #f5f5f5;
@@ -679,6 +716,7 @@ img {
   width: 32%;
   text-align: center;
   border: 1px solid #e8e8e8;
+  background: #ffffff;
   transition: 0.2s;
 }
 .card:hover {
@@ -739,18 +777,6 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 45px;
-}
-.step:after {
-  content: '';
-  width: 72px;
-  height: 25px;
-  position: absolute;
-  background: url(../img/step/arrow.png) no-repeat center;
-  top: -10px;
-  right: -15%;
-}
-.step:last-child::after{
-  display: none;
 }
 .step__image {
   width: 100px;
@@ -1683,7 +1709,8 @@ font-size: 16px;
 }
 .slick-initialized .slick-slide
 {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 .slick-loading .slick-slide
 {
@@ -1751,6 +1778,36 @@ font-size: 16px;
     transition-duration: 1ms !important;
     animation-iteration-count: 1 !important; 
   }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
 }
 @keyframes fadeInUp {
   from {

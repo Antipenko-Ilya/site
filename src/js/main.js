@@ -79,7 +79,7 @@ $(document).ready(() => {
 new WOW().init();
 $(document).ready(function(){
     $('.slider').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: $('.arrows__left'),
         nextArrow: $('.arrows__right'),
