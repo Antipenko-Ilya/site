@@ -368,7 +368,7 @@ template {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Museo Sans Light', sans-serif;
+  font-family: Moncerat;
   font-weight: 300;
 }
 
@@ -394,14 +394,13 @@ img {
 }
 .section {
   padding: 90px 0;
-  font-family: Oswald;
 }
 
 .section-title {
   font-size: 24px;
-  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   text-align: center;
+  letter-spacing: 5px;
   max-width: 500px;
 }
 
@@ -542,12 +541,12 @@ img {
 }
 
 .hero-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
   display: flex;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
   margin-bottom: 6px;
 }
 .hero-list__item:last-child {
@@ -592,7 +591,6 @@ img {
 }
 
 .offer__title {
-  max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
   text-align: center;
@@ -646,7 +644,7 @@ img {
   width: 80%;
 }
 .portfolio {
-  background: #f5f5f5 url(../img/portfolio-img/portfolio_pattern.png) repeat-y center left;
+  background: #f5f5f5;
   background-size: 50%;
 }
 
@@ -705,6 +703,12 @@ div.slick-initialized {
 .price__card {
   margin-bottom: 30px;
 }
+.price__card:hover img {
+  transform: scale(1.1);
+}
+.card__preview {
+  transition: .5s;
+  }
 .card {
   width: 32%;
   text-align: center;
@@ -715,7 +719,10 @@ div.slick-initialized {
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 .card__text {
-  padding: 40px;
+  padding: 20px;
+}
+.card__link {
+  font-size: 13px;
 }
 .card__image:hover::before {
   opacity: 1;
@@ -725,20 +732,10 @@ div.slick-initialized {
   height: 260px;
   display: block;
   position: relative;
+  overflow:hidden;
 }
 .card__preview {
   display: block;
-}
-.card__image::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
-  opacity: 0;
-  text-replace: 0.2s;
 }
 .card__title {
   margin-top: 0;
@@ -1657,8 +1654,8 @@ font-size: 16px;
     position: relative;
     top: 0;
     left: 0;
-
-    display: block;
+    display:flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
