@@ -400,7 +400,6 @@ img {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 5px;
   max-width: 500px;
 }
 
@@ -557,9 +556,15 @@ img {
 .hero-list__text {
   height: 37px;
 }
+.offer-block__text{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
 .offer-wrap {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  flex-direction: column;
   padding-left: 20px;
 }
 .offer-container {
@@ -571,6 +576,19 @@ img {
   color: #ffffff;
   background: rgba(0, 0, 0, .8);
 }
+.offer-block__list-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.offer-block__list-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align-last: left;
+}
+.offer-block__list-items {
+  width: 100%;
+}
 .offer {
   background: url("../img/offer/bg.jpg");
   background-size: cover;
@@ -579,7 +597,7 @@ img {
   padding: 0;
 }
 .offer-block {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -587,8 +605,10 @@ img {
   position: relative;
 }
 .offer-block__img {
-  width: 65%;
+  width: 45%;
   height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .offer__title {
@@ -602,23 +622,6 @@ img {
   margin-bottom: 30px;
 }
 
-.offer__input {
-  margin-bottom: 30px;
-  width: 240px;
-  height: 65px;
-  outline: none;
-}
-
-.offer__input:first-child {
-  margin-right: 10px;
-}
-
-.offer__button {
-  width: 100%;
-  min-height: 70px;
-  cursor: pointer;
-  outline: none;
-}
 .communication{
   width: 98%;
   margin-top: 18px;
@@ -669,7 +672,7 @@ img {
   margin: 0 10px;
 }
 .slider__image {
-  width: 200px;
+  width: 225px;
 }
 .slider.slick-list {
   display: flex;
@@ -684,6 +687,16 @@ div.slick-initialized {
 .slider__item {
   margin-left: 0 auto;
   outline: none;
+}
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio-content__item {
+  max-width: 200px;
+  margin: 10px;
 }
 .portfolio__arrows {
   max-width: 120px;
@@ -1285,7 +1298,6 @@ font-size: 16px;
     justify-content: center;
     padding-left: 0px;
     padding: 20px;
-    flex-direction: column-reverse;
   }
   .offer-block {
     width: 100%;
@@ -1553,7 +1565,10 @@ font-size: 16px;
     width: 301px;
     font-size: 18px;
   }
-  
+  .portfolio-content {
+    flex-direction: column;
+    align-items: center;justify-content: center;
+  }
   .contacts-container {
     width: 100%;
   }
@@ -1623,6 +1638,10 @@ font-size: 16px;
   .portfolio__title {
     font-size: 18px;
     width: 272px;
+  }
+  .portfolio-content {
+    flex-direction: column;
+    align-items: center;justify-content: center;
   }
   .price__title {
     font-size: 18px;
