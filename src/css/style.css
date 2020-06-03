@@ -484,7 +484,7 @@ img {
 }
 
 .hero {
-  background: url(../img/hero/bgc.jpg);
+  background: url(../img/case-flagman-img-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -591,7 +591,7 @@ img {
   width: 100%;
 }
 .offer {
-  background: url("../img/offer/bg.jpg");
+  background: url("../img/case-flagman-img-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
